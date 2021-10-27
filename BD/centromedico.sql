@@ -1,5 +1,5 @@
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ centromedico;
-USE centromedico;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ heroku_dac2725609cda16;
+USE heroku_dac2725609cda16;
 
 DROP TABLE IF EXISTS `citas`;
 CREATE TABLE `citas` (

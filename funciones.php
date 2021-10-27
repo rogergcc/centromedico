@@ -1,7 +1,7 @@
 <?php
 	function conexion(){
 		try{
-			$conexion = new PDO('mysql:host=localhost;dbname=centromedico','root','');
+			$conexion = new PDO('mysql:host=us-cdbr-east-04.cleardb.com;dbname=heroku_dac2725609cda16','b0cf9691cfb528','b1c76ddc');
 			return $conexion;
 		}catch(PDOException $e){
 			return false;
