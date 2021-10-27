@@ -39,34 +39,34 @@ if(!$pacientes)
 					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
 						<h2>Agregar Citas</h2>
 						<label>Fecha:</label>
-                        <input type="date" name="fecha" placeholder="Fecha:" required/>
+                        <input type="date" name="citfecha" placeholder="Fecha:" required/>
                         <label>Hora:</label>
-                        <input type="time" name="hora" value="11:45" max="20:30" min="08:00" step="60" required>
+                        <input type="time" name="cithora" value="11:45" max="20:30" min="08:00" step="60" required>
                         <label>Paciente:</label>
-                        <select name="paciente" class="mayusculas" required> 
+                        <select name="citPaciente" class="mayusculas" required> 
 	                        <?php foreach ($pacientes as $Sql2): ?>
 							<?php echo "<option value='". $Sql2['pacNombre']. "'>". $Sql2['pacNombre']."</option>"; ?>
 							<?php endforeach; ?>
                         </select>
                         <label>Medicos:</label>
-                        <select name="medico" class="mayusculas" required> 
+                        <select name="citMedico" class="mayusculas" required> 
 	                        <?php foreach ($medicos as $Sql): ?>
 							<?php echo "<option value='". $Sql['mednombres']. "'>". $Sql['mednombres']." ". $Sql['medapellidos']. "</option>"; ?>
 							<?php endforeach; ?>
                         </select>
                         <label>Consultorios:</label>
-                        <select name="consultorio" class="mayusculas" required> 
+                        <select name="citConsultorio" class="mayusculas" required> 
 	                        <?php foreach ($consultorios as $Sql2): ?>
 							<?php echo "<option value='". $Sql2['conNombre']. "'>". $Sql2['conNombre']."</option>"; ?>
 							<?php endforeach; ?>
                         </select>
                         <label>Estado:</label required>
-                        <select name="estado">
+                        <select name="citestado">
                         	<option value="asignado">Asignado</option>
                         	<option value="atendido">Atendido</option>                    	
                         </select>
                         <label>Observaciones:</label>
-                        <textarea placeholder="Observacion:" name="observaciones"></textarea>
+                        <textarea placeholder="Observacion:" name="citobservaciones "></textarea>
 						<input type="submit" name="enviar" value="Agregar Consultorio">
 					</form>
 						<?php  if(!empty($mensaje)): ?>
