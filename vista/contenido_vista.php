@@ -1,7 +1,27 @@
+<?php
+if (!isset($_SESSION['usuario'])) {
+	header('Location: login.php');
+}
+
+
+$datos = [];
+$datos = $_SESSION['resultado'];
+
+$id_usuario = $datos["id"];
+$roll = $datos["Roll"];
+
+
+?>
+
 <?php include 'plantillas/header.php'; ?>
 	<section class="main">
 		<div class="wrapp">
-			<?php include 'plantillas/nav.php'; ?>
+
+			<?php 
+				if ($rol == "admin") {
+				include 'plantillas/nav.php';
+				}
+			 ?>
 			
 				<article>
 					<div class="mensaje">

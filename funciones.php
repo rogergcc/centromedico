@@ -43,4 +43,22 @@
 		return ($resultado) ? $resultado : false;
     }
 
+	 function obtener_tipo_usuario($conexion,$id){
+		$resultado = $conexion->query("SELECT * FROM usuarios WHERE id = $id LIMIT 1");
+	 $resultado = $resultado->fetchall();
+	 return ($resultado) ? $resultado : false;
+  }
+
+  function desconectar($conexion) {
+	/* Forma correcta de cerrar la conexión */
+	return $conexion->close();
+	
+ }
+ 
+ function disconnect ( $pdo ) {
+   global $pdo ;
+  
+   $pdo = null;
+}
+
 ?>

@@ -19,7 +19,7 @@ html{
 }
 p{
 	text-align:center;
-	color: #14BACE;
+	color: #226abd;
 	margin: 1% 0%;
 	font-size: 1.5em;
 }
@@ -31,8 +31,8 @@ form {
   margin: 0 auto 100px;
   padding: 15px 20px;
   text-align: center;
-  border: 1px solid #14BACE;
-  box-shadow: 0 0px 10px #14BACE !important;
+  border: 1px solid #226abd;
+  box-shadow: 0 0px 10px #226abd !important;
 }
 form img{
     width: 50%;
@@ -44,8 +44,8 @@ form input{
   outline: 0;
   background: rgba(0,0,0,.0);
   border: 1px;
-  border-bottom: 1px solid #14BACE;
-  color: #14BACE;
+  border-bottom: 1px solid #226abd;
+  color: #226abd;
   width: 100%;
   border: 0;
   margin: 0 0 10px;
@@ -53,29 +53,29 @@ form input{
   font-size: 20px;
 }
 form input:focus {
-  border-bottom:2px solid #14BACE;
+  border-bottom:2px solid #226abd;
 }
 form input[type="submit"]{
-      border: 1px solid #14BACE;
-    box-shadow: 0 0px 10px #14BACE !important;
-  background: #14BACE;
+      border: 1px solid #226abd;
+    box-shadow: 0 0px 10px #226abd !important;
+  background: #226abd;
   cursor:pointer;
     color:white;
 }
 h2{
-  color: #14BACE;
+  color: #226abd;
   font-size: 1.5em;
   padding: 10px 30px;
   border-radius:5px;
   background:#fff;
 }
 form input[type="submit"]:hover,.form input[type="submit"]:active,.form input[type="submit"]:focus {
-  color: #14BACE;
+  color: #226abd;
   background: rgba(255,255,255,.2);
-    border:1px solid #14BACE;
+    border:1px solid #226abd;
 }
 .bordes{
-	border-bottom:1px solid #14BACE;
+	border-bottom:1px solid #226abd;
 }
 ul{
     display: block;

@@ -22,6 +22,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	$resultado = $statement->fetch();
 	if($resultado !==false){
 		$_SESSION['usuario'] = $usuario;
+		$_SESSION['resultado'] = $resultado;
 		header('Location: index.php');
 	}else{
 		$errores .= 'Datos incorrectos y/o invalidos!';

@@ -15,7 +15,8 @@
                             <input type="text" name="apellidos" placeholder="Apellidos" />
                             <select name="roll">
                                 <option value="admin">Admin</option>
-                                <option value="Limitado">Limitado</option>
+                                <option value="cliente">Cliente</option>
+                                <!-- <option value="Personal">Personal</option> -->
                             </select>
                             <input type="submit" value="Registrar" />
                             <?php  if(!empty($errores)): ?>
